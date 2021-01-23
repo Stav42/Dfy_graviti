@@ -70,16 +70,19 @@ def plot_output(bodies, outfile=None):
     ax = fig.add_subplot(1, 1, 1)
     max_range = 0
     for index, current_body in enumerate(bodies):
-        print(current_body)
-        max_dim = max(max(current_body[index]["x"]), max(current_body[index]["y"]))
-        if max_dim > max_range:
-            max_range = max_dim
-        ax.plot(current_body["x"], current_body["y"], c=random.choice(colours),
-                label=current_body["name"])
+        if index == 3:
+            max_dim = max(max(current_body['x']), max(current_body['y']))
+            if max_dim > max_range:
+                max_range = max_dim
+            ax.plot(current_body["x"], current_body["y"], c=random.choice(colours),
+                    label=current_body["name"])
+        else:
+            plot.scatter(current_body["x"], current_body["y"], c=random.choice(colours), label=current_body["name"], s=22)
+            ax.plot(current_body["x"], current_body["y"], c=random.choice(colours),
+                    label=current_body["name"])
 
     ax.set_xlim([-max_range, max_range])
     ax.set_ylim([-max_range, max_range])
-    ax.set_zlim([-max_range, max_range])
     ax.legend()
 
     if outfile:
