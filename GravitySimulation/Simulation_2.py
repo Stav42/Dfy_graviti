@@ -77,9 +77,10 @@ def plot_output(bodies, outfile=None):
             ax.plot(current_body["x"], current_body["y"], c=random.choice(colours),
                     label=current_body["name"])
         else:
-            plot.scatter(current_body["x"], current_body["y"], c=random.choice(colours), label=current_body["name"], s=22)
-            ax.plot(current_body["x"], current_body["y"], c=random.choice(colours),
-                    label=current_body["name"])
+            plot.scatter(current_body["x"], current_body["y"], c=random.choice(colours), label=current_body["name"],
+                         s=22)
+
+    plot.scatter(0.5, 0, label="unit_mass", s=22)
 
     ax.set_xlim([-max_range, max_range])
     ax.set_ylim([-max_range, max_range])
@@ -109,5 +110,5 @@ if __name__ == "__main__":
 
     targetbody = Planets(location=unit_mass["location"], velocity=unit_mass["velocity"], name="unit_mass")
 
-    motions = run_simulation(planets, targetbody, time_step=1e-2, no_of_steps=80000, report_int=1000)
+    motions = run_simulation(planets, targetbody, time_step=2e-6, no_of_steps=8000000, report_int=1000)
     plot_output(motions)
