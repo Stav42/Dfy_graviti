@@ -113,3 +113,5 @@ if __name__ == "__main__":
 
     motions = run_simulation(3, bodies, time_step=100, no_of_steps=80000, report_freq=1000)
     plot_output(motions)
+
+#yaay! from the console :)
