@@ -67,8 +67,8 @@ def run_simulation(planets, targetbody, time_step, no_of_steps, report_int):
     )
 
     t0 = 0
-    times = np.linspace(0, 25, 9000000)
-    values = scipy.integrate.odeint(calculate_acc, (init), times, args=(planets), tfirst=False, rtol=1e-5)
+    times = np.linspace(0, 25, 900000)
+    values = scipy.integrate.solve_ivp(calculate_acc, (init), times, method="LSODA", args=(planets), tfirst=False, rtol=1e-5)
 
 
     return values
