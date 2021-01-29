@@ -1,7 +1,7 @@
 # Dfy_graviti
 Internship - Space Gravity simulator.
 
-Simulation.py contains the code. I have used scipy.integrate.solve_ivp function with the integrators listed below.
+Simulation.py contains the code. I have used __scipy.integrate.solve_ivp__ function with the integrators listed below.
 
 Results for different propagators are in __/Results__ Folder
 
