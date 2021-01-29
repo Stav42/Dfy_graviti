@@ -1,7 +1,7 @@
 # Dfy_graviti
 Internship - Space Gravity simulator
 
-Results for different propagators are in /Results Folder
+Results for different propagators are in __/Results__ Folder
 
 ## Integration methods used:
 
