@@ -19,3 +19,6 @@ Results for different propagators are in __/Results__ Folder
 
 * __LSODA__: Adams/BDF method with automatic stiffness detection and switching [7], [8]. This is a wrapper of the Fortran solver from ODEPACK.
 
+### Radius Magnitude (from origin) vs time plot for time period (0,65) (in seconds)
+
+![image](https://github.com/Stav42/Dfy_graviti/blob/main/Propagators.png)
