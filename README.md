@@ -22,3 +22,7 @@ Results for different propagators are in __/Results__ Folder
 ### Radius Magnitude (from origin) vs time plot for time period (0,65) (in seconds)
 
 ![image](https://github.com/Stav42/Dfy_graviti/blob/main/Propagators.png)
+
+Magnified to (8-12) interval
+
+![image](https://github.com/Stav42/Dfy_graviti/blob/main/8%20sec%20-%2012%20sec.png)
