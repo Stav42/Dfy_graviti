@@ -1,6 +1,8 @@
 # Dfy_graviti
 Internship - Space Gravity simulator.
 
+Problem statement and positions for all planets can be found in the __file ProblemStatement.pdf__
+
 Simulation.py contains the code. I have used __scipy.integrate.solve_ivp__ function with the integrators listed below. This is for individual propagator.
 
 To plot for all propagators together, run __props_simultaneous.py__
