@@ -28,3 +28,7 @@ Results for different propagators are in __/Results__ Folder
 Magnified to (8-12) interval
 
 ![image](https://github.com/Stav42/Dfy_graviti/blob/main/8%20sec%20-%2012%20sec.png)
+
+Simultaneous plots for all propagators from 8 - 12.7 seconds:
+
+![image](https://github.com/Stav42/Dfy_graviti/blob/main/Results/PropsSimultaneously_8-12.7s.png)
